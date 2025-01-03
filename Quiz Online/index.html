@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Marker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            .container {
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Quiz Marker</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#quiz-listing">Quiz Listing</a>
+        <a href="#create-quiz">Create Quiz</a>
+        <a href="#take-quiz">Take Quiz</a>
+        <a href="#results">Quiz Results</a>
+        <a href="#login">Login</a>
+    </nav>
+    <div class="container" id="home">
+        <div class="card">
+            <h2>Welcome to Online Quiz Marker</h2>
+            <p>Create, take, and track quizzes with ease.</p>
+        </div>
+    </div>
+    <div class="container" id="quiz-listing">
+        <div class="card">
+            <h2>Quiz Listing</h2>
+            <p>Explore available quizzes:</p>
+            <ul>
+                <li>Quiz 1: General Knowledge</li>
+                <li>Quiz 2: Science Trivia</li>
+                <li>Quiz 3: History Facts</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="create-quiz">
+        <div class="card">
+            <h2>Create a Quiz</h2>
+            <form>
+                <label for="quiz-title">Quiz Title:</label><br>
+                <input type="text" id="quiz-title" name="quiz-title"><br><br>
+                <label for="quiz-description">Description:</label><br>
+                <textarea id="quiz-description" name="quiz-description"></textarea><br><br>
+                <label for="quiz-questions">Questions:</label><br>
+                <textarea id="quiz-questions" name="quiz-questions" placeholder="Add questions and options here..."></textarea><br><br>
+                <button type="submit">Create Quiz</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="take-quiz">
+        <div class="card">
+            <h2>Take a Quiz</h2>
+            <p>Select a quiz to begin:</p>
+            <button>Start Quiz 1</button>
+            <button>Start Quiz 2</button>
+            <button>Start Quiz 3</button>
+        </div>
+    </div>
+    <div class="container" id="results">
+        <div class="card">
+            <h2>Quiz Results</h2>
+            <p>View your scores:</p>
+            <ul>
+                <li>Quiz 1: 80%</li>
+                <li>Quiz 2: 90%</li>
+                <li>Quiz 3: 75%</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="login">
+        <div class="card">
+            <h2>User Authentication</h2>
+            <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
